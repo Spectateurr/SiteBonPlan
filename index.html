@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeBonPlan - Annonces en ligne</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo-removebg-preview.png" alt="LeBonPlan Logo">
+        </div>
+        
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Accueil</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Inscription</a></li>
+                <li><a href="#">Connexion</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Avis</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Trouvez ce que vous cherchez</h1>
+            <p>Des milliers d'annonces à portée de clic</p>
+            <div class="search-container">
+                <input type="text" placeholder="Que recherchez-vous ?">
+                <button class="search-btn">Rechercher</button>
+            </div>
+        </section>
+
+        <section class="categories">
+            <h2>Catégories</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-icon">🏠</div>
+                    <h3>Immobilier</h3>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🚗</div>
+                    <h3>Véhicules</h3>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">📱</div>
+                    <h3>Multimédia</h3>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🎮</div>
+                    <h3>Loisirs</h3>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">👕</div>
+                    <h3>Mode</h3>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🏡</div>
+                    <h3>Maison</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="latest-articles">
+            <h2>Derniers articles ajoutés</h2>
+            <div class="articles-grid">
+                <article class="article-card">
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500" alt="iPhone">
+                    <div class="article-content">
+                        <h3>iPhone 13 Pro</h3>
+                        <p class="category">Multimédia</p>
+                        <p class="price">800€</p>
+                        <p class="date">01/03/2024</p>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=500" alt="Appartement">
+                    <div class="article-content">
+                        <h3>Appartement T2</h3>
+                        <p class="category">Immobilier</p>
+                        <p class="price">150 000€</p>
+                        <p class="date">29/02/2024</p>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <img src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=500" alt="Vélo">
+                    <div class="article-content">
+                        <h3>Vélo électrique</h3>
+                        <p class="category">Loisirs</p>
+                        <p class="price">1 200€</p>
+                        <p class="date">28/02/2024</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="about-card">
+                <h3>Qui sommes-nous ?</h3>
+                <p>LeBonPlan est votre plateforme de petites annonces en ligne. 
+                   Nous facilitons la mise en relation entre vendeurs et acheteurs 
+                   depuis plus de 10 ans.</p>
+            </div>
+            <div class="about-card">
+                <h3>Notre mission</h3>
+                <p>Permettre à chacun de vendre et acheter en toute simplicité, 
+                   en privilégiant la qualité des annonces et la sécurité des transactions.</p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Contactez-nous</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" required>
+                    <label for="name">Nom</label>
+                    <span class="focus-border"></span>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Email</label>
+                    <span class="focus-border"></span>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" required></textarea>
+                    <label for="message">Message</label>
+                    <span class="focus-border"></span>
+                </div>
+                <div class="form-buttons">
+                    <button type="submit" class="btn-submit">Envoyer</button>
+                    <button type="reset" class="btn-reset">Réinitialiser</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 LeBonPlan - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
